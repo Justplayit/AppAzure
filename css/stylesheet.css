@@ -41,7 +41,7 @@ body{
 }
 
 #upload{
-    border: 2px dashed aliceblue;
+    border: 1px dashed #8f969c;
     height: 170px;
     margin-top: 20px;
     padding: 0;
