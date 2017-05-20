@@ -1,105 +1,51 @@
+
 body{
     background-color: rgba(0, 0, 0, 0.92);
     font-family: "Segoe UI", serif;
+    height: 100%;
 }
 
-#upload-bar{
-    margin-bottom: 10px;
-}
-
-#upload-button, #add-button{
-    margin-top: 5px;
+#new-post{
     margin-bottom: 5px;
     background-color: rgb(57, 51, 61);
     border: none;
     font-size: 13px;
     transition: background-color, 1s;
     color: white;
-    border-radius: 20px;
+    border-radius: 5px;
     width: 150px;
 }
 
-#upload-button:hover, #add-button:hover{
+#new-post:hover{
     background-color: #11a985;
-
 }
 
-#data-wrapper{
-    background-color: #22232f;
+#menu{
+    margin-top: 0.4%;
 }
 
-#file-upload{
-    display: none;
-}
-
-#file-names-wrapper{
-    visibility: hidden;
-    font-size: 13px;
-    margin-bottom: 5px;
-    overflow-y: hidden;
-}
-
-#body::-webkit-scrollbar{
-    width: 10px;
-    background-color: transparent;
-}
-
-.file-name{
-    border: 1px dashed rgb(128, 126, 132);
-    color: rgb(132, 130, 136);
-    font-size: 12px;
-    border-radius: 25px;
-    font-weight: bold;
-    background-color: transparent;
-    width: 120px;
-    height: 20px;
-    margin-top: 4px;
-    z-index: 1;
-    transition: background-color 0.5s, border 0.5s, color 0.5s;
-    text-align: center;
-    line-height: 4px;
-}
-
-.file-name:hover{
-    background-color: rgb(211, 86, 87);
-    color: white;
-    border: 1px solid transparent;
-}
-
-#file-buttons{
-    margin-bottom: 5px;
-}
-
-#file-number{
-    color: white;
-    font-weight: bold;
-    font-size: 12px;
-    text-align: center;
-}
-
-#progress-bar{
-    background-color: #11a985;
-    width: 0%;
-    margin-top: 3px;
-    height: 2px;
-    border-radius: 2px;
-    padding: 0;
-    text-align: center;
-}
-
-.custom-parent{
+#upload-area{
+    background-color: rgba(64, 66, 76, 0.96);
+    border-radius: 5px 5px 0 0;
     padding: 0;
 }
 
-.on-upload{
-    background-color: #11a985;
-    color: white;
-    border: none;
+#upload-rect{
+    border: 2px dashed aliceblue;
+    height: 170px;
+    margin-top: 50px;
+    padding: 0;
 
 }
 
-#error-area{
-    text-align: center;
-    color: #afaaa9;
-    font-size: 12px;
+#button-area{
+    margin-top: 20px;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+#footer-area{
+    height: 50px;
+    background-color: #35363f;
+    border-radius: 0 0 5px 5px;
 }

@@ -9,29 +9,39 @@
 
 </head>
 <body>
+    <div class="modal fade" id="modal" role="dialog">
+        <div id="upload-area" class="col-md-4 col-md-offset-4">
+            <div id="upload-rect" class="col-md-4 col-md-offset-4">
 
- <div id="wrapper" class="col-md-12">
+            </div>
 
-        <div id="error-area" class="col-md-4 col-md-offset-4">Please have your data contained in only one text file</div>
-
-        <div id="file-names-wrapper" class="col-md-4 col-md-offset-4">
-            <ul id="file-buttons" class="text-center list-inline">
-
-            </ul>
+            <div id="button-area" class="col-md-2 col-md-offset-5">
+                <button type="button" class="btn btn-default">Browse files</button>
+            </div>
         </div>
+        <div id="footer-area" class="col-md-4 col-md-offset-4">
 
-        <div id="upload-bar" class="col-md-12 text-center">
-            <input id="file-upload" type="file" name="name"/>
-            <label id="add-button" class="btn btn-default" for="file-upload">Add file</label>
-            <button id="upload-button" class="btn btn-default">Upload file</button>
         </div>
-
     </div>
+
+    <div id='menu' class="container">
+        <div class='container'>
+            <div id="buttons-wrapper" class="col-md-2 col-lg-offset-5">
+                <button id="new-post" class="btn btn-default" data-toggle="modal" data-target="#modal">New post</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="col-md-12">
+
+    </footer>
 
 </body>
 
 <script src="jquery/jquery.js"></script>
 <script src="bootstrap/js/bootstrap.js"></script>
-<script src="jquery/new_script.js"></script>
+<script src="jquery/script.js"></script>
 
 </html>
+
+
