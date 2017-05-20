@@ -3,21 +3,31 @@ body{
     background-color: rgba(0, 0, 0, 0.92);
     font-family: "Segoe UI", serif;
     height: 100%;
+    display: grid;
+}
+
+#buttons-wrapper{
+    padding: 0px;
 }
 
 #new-post{
-    margin-bottom: 5px;
-    background-color: rgb(57, 51, 61);
+    /*margin-bottom: 5px;*/
+    background-color: rgb(76, 69, 81);
     border: none;
-    font-size: 13px;
     transition: background-color, 1s;
-    color: white;
-    border-radius: 5px;
-    width: 150px;
+    color: #cecece;
+    border-radius: 25px;
+    width: 170px;
+    height: 45px;
+    margin-top: 10px;
+    font-size: 0.85em;
+    font-weight: bold;
 }
 
 #new-post:hover{
-    background-color: #11a985;
+    /*background-color: #11a985;*/
+    background-color: rgba(118, 204, 119, 0.81);
+    color: white;
 }
 
 #menu{
@@ -25,27 +35,44 @@ body{
 }
 
 #upload-area{
-    background-color: rgba(64, 66, 76, 0.96);
+    background-color: rgba(55, 57, 67, 0.96);
     border-radius: 5px 5px 0 0;
     padding: 0;
 }
 
-#upload-rect{
+#upload{
     border: 2px dashed aliceblue;
     height: 170px;
-    margin-top: 50px;
+    margin-top: 20px;
     padding: 0;
 
 }
 
 #button-area{
-    margin-top: 20px;
     padding: 0;
-    margin-bottom: 20px;
 }
 
 #footer-area{
     height: 50px;
-    background-color: #35363f;
+    background-color: #26272e;
     border-radius: 0 0 5px 5px;
+}
+
+#browse{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(95, 93, 110);
+    width: 120px;
+    color: #b4b4b4;
+    font-weight: bold;
+    height: 40px;
+    transition: color 1s, background-color 1s;
+    font-size: 12px;
+}
+
+#browse:hover{
+    color: white;
+    background-color: rgba(118, 204, 119, 0.81);
 }
