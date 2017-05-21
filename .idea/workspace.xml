@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7172a418-1ec4-4891-8d75-0cc9adf9056a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/sitemap.xml" afterPath="$PROJECT_DIR$/public/sitemap.xml" />
-    </list>
+    <list default="true" id="7172a418-1ec4-4891-8d75-0cc9adf9056a" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -239,7 +236,7 @@
       <updated>1495376316487</updated>
       <workItem from="1495376321222" duration="5096000" />
       <workItem from="1495391873285" duration="787000" />
-      <workItem from="1495393308777" duration="15000" />
+      <workItem from="1495393308777" duration="58000" />
     </task>
     <task id="LOCAL-00001" summary="modified html page">
       <created>1495378188643</created>
@@ -283,11 +280,18 @@
       <option name="project" value="LOCAL" />
       <updated>1495392540156</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="added endpoint to sitemap.xml">
+      <created>1495393328527</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1495393328527</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5898000" />
+    <option name="totallyTimeSpent" value="5941000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
