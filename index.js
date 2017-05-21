@@ -14,6 +14,13 @@ try {
         }
         response.sendFile(__dirname, 'index.html');
     });
+
+    app.get('/sitemap', function (request, response) {
+        if (request) {
+            console.log(request);
+        }
+        response.sendFile(__dirname, 'sitemap.xml');
+    });
 }catch(err){
     console.log(err);
 }
