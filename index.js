@@ -3,7 +3,7 @@ var app = express();
 var path = require('path')
 var server = require('http').createServer(app);
 
-server.listen(process.env.PORT || 8000);
+server.listen(process.env.PORT || 1337);
 
 app.use(express.static(path.join(__dirname, 'public')));
 
