@@ -19,7 +19,7 @@ try {
         if (request) {
             console.log(request);
         }
-        response.send('sitemap.xml');
+        response.send('this is a string');
     });
 }catch(err){
     console.log(err);
