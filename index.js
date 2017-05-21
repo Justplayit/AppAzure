@@ -1,15 +1,15 @@
-var express = require('express');
-var app = express();
-var path = require('path')
-var server = require('http').createServer(app);
-
-server.listen(process.env.PORT || 1337);
-
-app.use(express.static(path.join(__dirname, 'public')));
-
-app.get('/', function(req, res){
-   res.sendFile(__dirname, 'index.html');
-});
+// var express = require('express');
+// var app = express();
+// var path = require('path')
+// var server = require('http').createServer(app);
+//
+// server.listen(process.env.PORT || 1337);
+//
+// app.use(express.static(path.join(__dirname, 'public')));
+//
+// app.get('/', function(req, res){
+//    res.sendFile(__dirname, 'index.html');
+// });
 
 // var http = require('http');
 // var fs = require('fs')
@@ -42,3 +42,18 @@ app.get('/', function(req, res){
 // server.listen(port);
 //
 // console.log("Server running at http://localhost:%d", port);
+
+
+var http = require('http');
+
+var server = http.createServer(function(request, response) {
+
+    response.writeHead(200, {"Content-Type": "text/plain"});
+    response.end("Hello Azure!");
+
+});
+
+var port = process.env.PORT || 1337;
+server.listen(port);
+
+console.log("Server running at http://localhost:%d", port);
