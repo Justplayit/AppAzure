@@ -60,6 +60,17 @@ xhr.open('GET', url, true);
        xhr.setRequestHeader(header, value);
 xhr.send();
 alert(url);
+        
+        xhr.onreadystatechange = processRequest;
+ 
+function processRequest(e) {
+   if (xhr.readyState == 4) {
+        // time to partay!!!
+       
+        var response = JSON.parse(xhr.responseText);
+       alert(response);
+    }
+}
 }
 }
 
