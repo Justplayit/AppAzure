@@ -21,6 +21,12 @@ try {
         }
         response.sendFile(__dirname, 'sitemap.xml');
     });
+        app.get('/BingSiteAuth.xml', function (request, response) {
+        if (request) {
+            console.log(request);
+        }
+        response.sendFile(__dirname, 'BingSiteAuth.xml');
+    });
       app.get('/sitemap', function (request, response) {
         if (request) {
             console.log(request);
