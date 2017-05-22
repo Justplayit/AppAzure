@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7172a418-1ec4-4891-8d75-0cc9adf9056a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -31,7 +32,7 @@
         <entry file="file://$PROJECT_DIR$/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="408">
-              <caret line="24" column="37" lean-forward="true" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
+              <caret line="24" column="55" lean-forward="false" selection-start-line="24" selection-start-column="55" selection-end-line="24" selection-end-column="55" />
               <folding />
             </state>
           </provider>
@@ -352,7 +353,7 @@
       <workItem from="1495376321222" duration="5096000" />
       <workItem from="1495391873285" duration="787000" />
       <workItem from="1495393308777" duration="58000" />
-      <workItem from="1495467444864" duration="65000" />
+      <workItem from="1495467444864" duration="144000" />
     </task>
     <task id="LOCAL-00001" summary="modified html page">
       <created>1495378188643</created>
@@ -410,11 +411,18 @@
       <option name="project" value="LOCAL" />
       <updated>1495467466415</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="modified html file">
+      <created>1495467522167</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1495467522167</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6006000" />
+    <option name="totallyTimeSpent" value="6085000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -448,7 +456,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="modified html page" />
     <MESSAGE value="added endpoint to sitemap.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="added endpoint to sitemap.xml" />
+    <MESSAGE value="modified html file" />
+    <option name="LAST_COMMIT_MESSAGE" value="modified html file" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -551,10 +560,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/LICENSE">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
-          <caret line="24" column="37" lean-forward="true" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
+          <caret line="24" column="55" lean-forward="false" selection-start-line="24" selection-start-column="55" selection-end-line="24" selection-end-column="55" />
           <folding />
         </state>
       </provider>
