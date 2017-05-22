@@ -9,6 +9,8 @@ try {
 
     app.use(express.static(path.join(__dirname, 'public')));
 
+    console.log('something')
+
     app.get('/', function (request, response) {
         if (request) {
             console.log(request);

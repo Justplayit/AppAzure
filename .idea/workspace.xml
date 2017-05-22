@@ -4,7 +4,6 @@
     <list default="true" id="7172a418-1ec4-4891-8d75-0cc9adf9056a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.js" afterPath="$PROJECT_DIR$/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,8 +21,8 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="40" column="35" lean-forward="false" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="35" />
+            <state relative-caret-position="187">
+              <caret line="11" column="26" lean-forward="false" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -401,7 +400,7 @@
       <workItem from="1495376321222" duration="5096000" />
       <workItem from="1495391873285" duration="787000" />
       <workItem from="1495393308777" duration="58000" />
-      <workItem from="1495467444864" duration="2601000" />
+      <workItem from="1495467444864" duration="2724000" />
     </task>
     <task id="LOCAL-00001" summary="modified html page">
       <created>1495378188643</created>
@@ -522,11 +521,18 @@
       <option name="project" value="LOCAL" />
       <updated>1495469426881</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="modified index.js">
+      <created>1495470061747</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1495470061747</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8542000" />
+    <option name="totallyTimeSpent" value="8665000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="974" height="1047" extended-state="0" />
@@ -562,7 +568,8 @@
     <MESSAGE value="modified html page" />
     <MESSAGE value="added endpoint to sitemap.xml" />
     <MESSAGE value="modified html file" />
-    <option name="LAST_COMMIT_MESSAGE" value="modified html file" />
+    <MESSAGE value="modified index.js" />
+    <option name="LAST_COMMIT_MESSAGE" value="modified index.js" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -692,8 +699,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="40" column="35" lean-forward="false" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="35" />
+        <state relative-caret-position="187">
+          <caret line="11" column="26" lean-forward="false" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
           <folding />
         </state>
       </provider>
