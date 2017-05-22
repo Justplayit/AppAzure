@@ -53,7 +53,7 @@ return false;
     else
     {
 
-alert("Search started...!!!!!!");
+alert(toSearch);
 }
 }
 
