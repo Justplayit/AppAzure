@@ -3,11 +3,10 @@ $(document).ready(function() {
     var modal = $('#upload-area');
     modal.css('margin-top', (window.innerHeight/2) - $('#upload').height());
 
-    var $form = $('#form');
 
     $('#file-dialog').on('change', function () {
        var files = $(this).get(0).files;
-       if (files.length == 0){
+       if (files.length === 0){
            return 0;
        }
 
