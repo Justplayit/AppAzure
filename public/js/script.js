@@ -29,5 +29,10 @@ $(document).ready(function() {
             });
     });
 
+    var $fileDialog = $('#file-dialog');
+    $fileDialog.on('change', function (event) {
+       $form.trigger('submit');
+    });
+
 });
 
