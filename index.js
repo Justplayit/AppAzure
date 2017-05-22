@@ -20,41 +20,43 @@ try {
         response.sendFile(__dirname, 'index.html');
     });
 
-    app.get('/sitemap.xml', function (request, response) {
-        if (request) {
-            console.log(request);
-        }
-        response.sendFile(__dirname, 'sitemap.xml');
-    });
+    // app.get('/sitemap.xml', function (request, response) {
+    //     if (request) {
+    //         console.log(request);
+    //     }
+    //     response.sendFile(__dirname, 'sitemap.xml');
+    // });
+    //
+    // app.get('/BingSiteAuth.xml', function (request, response) {
+    //     if (request) {
+    //         console.log(request);
+    //     }
+    //     response.sendFile(__dirname, 'BingSiteAuth.xml');
+    // });
+    //
+    // app.post('/upload', function (request, response) {
+    //     var form = new formidable.IncomingForm();
+    //     form.multiples = true;
+    //     form.uploadDir = path.join(__dirname, '/uploads/');
+    //
+    //     form.on('file', function (field, file) {
+    //         fs.rename(file.path, path.join(form.uploadDir, file.name));
+    //     });
+    //
+    //     form.on('error', function (error) {
+    //        console.log('An error occurred: \n' + error);
+    //     });
+    //
+    //     form.on('end', function () {
+    //         response.end('success');
+    //     });
+    //
+    //     form.parse(request);
+    //
+    // });
 
-    app.get('/BingSiteAuth.xml', function (request, response) {
-        if (request) {
-            console.log(request);
-        }
-        response.sendFile(__dirname, 'BingSiteAuth.xml');
-    });
-
-    app.post('/upload', function (request, response) {
-        var form = new formidable.IncomingForm();
-        form.multiples = true;
-        form.uploadDir = path.join(__dirname, '/uploads/');
-
-        form.on('file', function (field, file) {
-            fs.rename(file.path, path.join(form.uploadDir, file.name));
-        });
-
-        form.on('error', function (error) {
-           console.log('An error occurred: \n' + error);
-        });
-
-        form.on('end', function () {
-            response.end('success');
-        });
-
-        form.parse(request);
-
-    });
-}catch(err){
-    console.log(err);
+    }
+    catch(err){
+        console.log(err);
 }
 
