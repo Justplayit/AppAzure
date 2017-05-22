@@ -5,33 +5,38 @@ $(document).ready(function() {
 
     var $form = $('#form');
 
-    var ajaxData = new FormData($form.get(0));
-    console.log('here');
+    $('#file-dialog').on('change', function () {
+       var files = $(this).get(0).files;
+       if (files.length == 0){
+           return 0;
+       }
 
-    $form.on('submit', function (event) {
-        $.ajax({
-            url: $form.attr('action'),
-            type: $form.attr('method'),
-            data: ajaxData,
-            dataType: 'json',
-            cache: false,
-            contentType: false,
-            processData: false,
-            complete: function (event) {
-                console.log('Finished...');
-                },
-            success: function (data) {
-                console.log('Success...');
-                },
-            error: function () {
-                console.log('Error...')
-            }
-            });
-    });
+       var formData = new FormData();
 
-    var $fileDialog = $('#file-dialog');
-    $fileDialog.on('change', function (event) {
-       $form.trigger('submit');
+       for (var index = 0; index < files.length; index++){
+           var file = files[index];
+
+           formData.append('files', file, file.name);
+       }
+
+       $.ajax({
+          url: '/upload',
+           type: 'POST',
+           data: formData,
+           processData: false,
+           contentType: false,
+           success: function (data) {
+               console.log('upload successful!');
+           },
+           xhr: function () {
+               var xhr = new XMLHttpRequest();
+               // xhr.upload.addEventListener('progress', function () {
+               //
+               // });
+
+               return xhr;
+           }
+       });
     });
 
 });
