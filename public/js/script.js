@@ -1,5 +1,7 @@
 
 $(document).ready(function() {
+    
+    
     var modal = $('#upload-area');
     modal.css('margin-top', (window.innerHeight/2) - $('#upload').height());
 
@@ -39,4 +41,19 @@ $(document).ready(function() {
     });
 
 });
+
+
+function search(){
+var toSearch = document.getElementById("search-id").value;
+
+if( toSearch ==='' ){
+alert("Please fill the search box...!!!!!!");
+return false;
+}
+    else
+    {
+
+alert("Search started...!!!!!!");
+}
+}
 
