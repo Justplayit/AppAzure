@@ -3,6 +3,18 @@ $(document).ready(function() {
     var modal = $('#upload-area');
     modal.css('margin-top', (window.innerHeight/2) - $('#upload').height());
 
+      var $search = $('#search');
+
+    var data = new FormData($form.get(0));
+    
+
+    $search.on('submit', function (event) {
+   console.log('search');
+        console.log($data);
+    });
+
+    
+    
     var $form = $('#form');
 
     var ajaxData = new FormData($form.get(0));
