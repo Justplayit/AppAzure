@@ -3,6 +3,7 @@ $(document).ready(function() {
     var $form = $('#form');
 
     var ajaxData = new FormData($form.get(0));
+    console.log('here');
 
     $form.on('submit', function (event) {
         $.ajax({
