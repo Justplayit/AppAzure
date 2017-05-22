@@ -54,7 +54,7 @@ return false;
     {
 var url="  https://api.cognitive.microsoft.com/bing/v5.0/search?q=";
 url=url+toSearch+"&count=10&offset=0&mkt=en-us&safesearch=Moderate";
-      alert(url); 
+     
         var xhr = new XMLHttpRequest();
 xhr.open('GET', url, true);
        xhr.setRequestHeader("Ocp-Apim-Subscription-Key", "c9a9ed180e704db79a2419e518d5a637");
@@ -68,7 +68,8 @@ function processRequest(e) {
         // time to partay!!!
        
         var response = JSON.parse(xhr.responseText);
-       alert(response);
+       
+       document.getElementById("response").innerHTML=response;
     }
 }
 }
