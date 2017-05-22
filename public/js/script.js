@@ -55,6 +55,10 @@ return false;
 var url="  https://api.cognitive.microsoft.com/bing/v5.0/search?q=";
 url=url+toSearch+"&count=10&offset=0&mkt=en-us&safesearch=Moderate";
        
+        var xhr = new XMLHttpRequest();
+xhr.open('GET', url, true);
+       xhr.setRequestHeader(header, value);
+xhr.send();
 alert(url);
 }
 }
