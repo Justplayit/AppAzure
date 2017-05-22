@@ -52,8 +52,10 @@ return false;
 }
     else
     {
-
-alert(toSearch);
+var url="  https://api.cognitive.microsoft.com/bing/v5.0/search?q=";
+url=url+toSearch+"&count=10&offset=0&mkt=en-us&safesearch=Moderate";
+       
+alert(url);
 }
 }
 
