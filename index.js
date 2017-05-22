@@ -2,11 +2,8 @@ var express = require('express');
 var app = express();
 var path = require('path');
 var server = require('http').createServer(app);
-var bodyParser = require('body-parser');
 var formidable = require('formidable');
 var fs = require('fs');
-
-app.use(bodyParser.urlencoded({ extended: false }));
 
 try {
     server.listen(process.env.PORT || 1337);
