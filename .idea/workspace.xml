@@ -4,6 +4,7 @@
     <list default="true" id="7172a418-1ec4-4891-8d75-0cc9adf9056a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.js" afterPath="$PROJECT_DIR$/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,8 +22,8 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="22" column="4" lean-forward="false" selection-start-line="22" selection-start-column="7" selection-end-line="55" selection-end-column="10" />
+            <state relative-caret-position="139">
+              <caret line="22" column="4" lean-forward="false" selection-start-line="22" selection-start-column="4" selection-end-line="55" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -32,7 +33,7 @@
         <entry file="file://$PROJECT_DIR$/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="544">
-              <caret line="32" column="4" lean-forward="false" selection-start-line="32" selection-start-column="8" selection-end-line="40" selection-end-column="15" />
+              <caret line="32" column="4" lean-forward="false" selection-start-line="32" selection-start-column="4" selection-end-line="40" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -76,8 +77,8 @@
         <option value="$PROJECT_DIR$/IISNode.yml" />
         <option value="$PROJECT_DIR$/public/jquery/script.js" />
         <option value="$PROJECT_DIR$/public/js/script.js" />
-        <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/index.js" />
+        <option value="$PROJECT_DIR$/public/index.html" />
       </list>
     </option>
   </component>
@@ -384,7 +385,7 @@
       <workItem from="1495391873285" duration="787000" />
       <workItem from="1495393308777" duration="58000" />
       <workItem from="1495467444864" duration="5686000" />
-      <workItem from="1495473151795" duration="1518000" />
+      <workItem from="1495473151795" duration="1825000" />
     </task>
     <task id="LOCAL-00001" summary="modified html page">
       <created>1495378188643</created>
@@ -582,11 +583,18 @@
       <option name="project" value="LOCAL" />
       <updated>1495474542839</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="searching for problems">
+      <created>1495474673339</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1495474673339</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13145000" />
+    <option name="totallyTimeSpent" value="13452000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -757,6 +765,14 @@
     <entry file="file://$PROJECT_DIR$/public/jquery/script.js" />
     <entry file="file://$PROJECT_DIR$/public/jquery/new_script.js" />
     <entry file="file://$PROJECT_DIR$/uploads/upload_77582d5fd963d06a2010e108f2d5271a" />
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" column="4" lean-forward="false" selection-start-line="32" selection-start-column="4" selection-end-line="40" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -765,18 +781,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="4" lean-forward="false" selection-start-line="32" selection-start-column="8" selection-end-line="40" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="22" column="4" lean-forward="false" selection-start-line="22" selection-start-column="7" selection-end-line="55" selection-end-column="10" />
+        <state relative-caret-position="139">
+          <caret line="22" column="4" lean-forward="false" selection-start-line="22" selection-start-column="4" selection-end-line="55" selection-end-column="7" />
           <folding />
         </state>
       </provider>
