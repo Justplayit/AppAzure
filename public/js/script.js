@@ -66,9 +66,13 @@ xhr.send();
 function processRequest(e) {
    if (xhr.readyState == 4) {
         // time to partay!!!
-       
+       images=response.images.value;
         var response = JSON.parse(xhr.responseText);
-       
+      var arrayLength = images.length;
+for (var i = 0; i < arrayLength; i++) {
+  document.getElementById("response").innerHTML+=" <img src="+images.thumbnailUrl[i]+">";
+    //Do something
+} 
      console.log(response.images);
     }
 }
