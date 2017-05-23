@@ -66,7 +66,7 @@ xhr.send();
 function processRequest(e) {
    if (xhr.readyState == 4) {
        
-   console.log(response.images);
+   console.log(response);
     }
 }
 }
