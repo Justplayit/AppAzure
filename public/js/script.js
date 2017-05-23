@@ -65,6 +65,8 @@ xhr.send();
  
 function processRequest(e) {
    if (xhr.readyState == 4) {
+       
+       console.log(response.toString());
         // time to partay!!!
        images=response.images.value;
         var response = JSON.parse(xhr.responseText);
