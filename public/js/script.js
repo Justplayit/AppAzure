@@ -69,7 +69,7 @@ function processRequest(e) {
        
         var response = JSON.parse(xhr.responseText);
        
-     console.log(response);
+     console.log(response.images);
     }
 }
 }
