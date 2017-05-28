@@ -76,10 +76,10 @@ try {
                 metadata: {fileName: 'file'}
             }
 
-            var imgPath = file.image.path;
+            // var imgPath = file.image.path;
             var itemID = new Date().getTime();
 
-            blobClient.createBlockBlobFromLocalFile(containerName, itemID, imgPath, options,
+            blobClient.createBlockBlobFromLocalFile(containerName, itemID, options,
                 function(error){
                     if(error !== null){
                         console.log('Azure full error: ', error);
