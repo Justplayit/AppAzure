@@ -56,6 +56,7 @@ try {
         console.log('Request >> ', request)
         var form = new formidable.IncomingForm();
         var itemID = new Date().getTime();
+
         form.parse(request, function(err, fields, files){
            var options = {
                contentType: 'image/jpeg',
