@@ -21,8 +21,8 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="40" column="4" lean-forward="false" selection-start-line="40" selection-start-column="6" selection-end-line="52" selection-end-column="9" />
+            <state relative-caret-position="377">
+              <caret line="72" column="50" lean-forward="false" selection-start-line="72" selection-start-column="45" selection-end-line="72" selection-end-column="50" />
               <folding />
             </state>
           </provider>
@@ -428,7 +428,7 @@
       <workItem from="1495393308777" duration="58000" />
       <workItem from="1495467444864" duration="5686000" />
       <workItem from="1495473151795" duration="1983000" />
-      <workItem from="1495957173638" duration="5320000" />
+      <workItem from="1495957173638" duration="5363000" />
     </task>
     <task id="LOCAL-00001" summary="modified html page">
       <created>1495378188643</created>
@@ -710,11 +710,18 @@
       <option name="project" value="LOCAL" />
       <updated>1495963310640</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="trying to upload image">
+      <created>1495963650009</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1495963650009</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18930000" />
+    <option name="totallyTimeSpent" value="18973000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -956,8 +963,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="40" column="4" lean-forward="false" selection-start-line="40" selection-start-column="6" selection-end-line="52" selection-end-column="9" />
+        <state relative-caret-position="377">
+          <caret line="72" column="50" lean-forward="false" selection-start-line="72" selection-start-column="45" selection-end-line="72" selection-end-column="50" />
           <folding />
         </state>
       </provider>

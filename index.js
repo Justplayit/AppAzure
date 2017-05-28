@@ -70,13 +70,13 @@ try {
             response.end('success');
         });
 
-        form.parse(request, function (error, fields, files) {
+        form.parse(request, function (error, field, file) {
             var options = {
                 contentType: 'image/jpeg',
                 metadata: {fileName: 'file'}
             }
 
-            var imgPath = files.image.path;
+            var imgPath = file.image.path;
             var itemID = new Date().getTime();
 
             blobClient.createBlockBlobFromLocalFile(containerName, itemID, imgPath, options,
