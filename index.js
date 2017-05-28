@@ -80,7 +80,7 @@ try {
             // var imgPath = file.image.path;
             var itemID = new Date().getTime();
 
-            blobClient.createBlockBlobFromLocalFile(containerName, itemID, options,
+            blobClient.createBlockBlobFromLocalFile(containerName, itemID, file.uploadedFile.path, options,
                 function(error){
                     if(error !== null){
                         console.log('Azure full error: ', error);
