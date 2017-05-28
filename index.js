@@ -82,7 +82,7 @@ try {
 
             console.log(files['files'].path);
 
-            blobClient.createBlockBlobFromLocalFile(containerName, itemID, files.path, options,
+            blobClient.createBlockBlobFromLocalFile(containerName, itemID, files['files'].path, options,
                 function(error){
                     if(error !== null){
                         console.log('Azure full error: ', error);
