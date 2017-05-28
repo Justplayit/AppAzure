@@ -71,11 +71,11 @@ try {
             response.end('success');
         });
 
-        form.parse(request, function (error, field, file) {
+        form.parse(request, function (error, file) {
             var options = {
                 contentType: 'image/jpeg',
                 metadata: {fileName: 'file'}
-            }
+            };
 
             // var imgPath = file.image.path;
             var itemID = new Date().getTime();
