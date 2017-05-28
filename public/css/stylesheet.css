@@ -11,7 +11,6 @@ body{
 }
 
 #new-post, #browse, #search-button{
-    /*margin-bottom: 5px;*/
     background-color: rgb(95, 93, 110);
     border: none;
     transition: background-color, 1s;
@@ -60,24 +59,10 @@ body{
 }
 
 #browse{
-    /*margin-top: 10px;*/
     margin-bottom: 10px;
-    /*border-radius: 20px;*/
-    /*border: none;*/
     background-color: rgb(95, 93, 110);
-    /*width: 120px;*/
-    /*height: 40px;*/
-    /*color: #b4b4b4;*/
-    /*font-weight: bold;*/
-    /*transition: color 1s, background-color 1s;*/
-    /*font-size: 12px;*/
     line-height: 20px;
 }
-
-/*#browse:hover{*/
-    /*color: white;*/
-    /*background-color: rgba(118, 204, 119, 0.81);*/
-/*}*/
 
 #file-dialog{
     visibility: hidden;
@@ -88,4 +73,5 @@ body{
     margin-top: 10px;
     border-radius: 15px;
     border: none;
+    height: 23px;
 }
