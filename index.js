@@ -41,7 +41,7 @@ try {
 
     var uploadFull = function(imgPath, itemId, options){
         var fileName = itemId + '.jpg';
-        blobClient.createBlockBlogFromLocalFile(containerName, fileName, imgPath, options,
+        blobClient.createBlockBlobFromLocalFile(containerName, fileName, imgPath, options,
             function(error){
                 if(error !== null){
                     console.log('Azure full error: ', error);
