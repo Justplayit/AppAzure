@@ -22,7 +22,7 @@
         <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="507">
-              <caret line="82" column="43" lean-forward="false" selection-start-line="82" selection-start-column="43" selection-end-line="82" selection-end-column="43" />
+              <caret line="82" column="31" lean-forward="false" selection-start-line="82" selection-start-column="31" selection-end-line="82" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -427,14 +427,7 @@
       <workItem from="1495393308777" duration="58000" />
       <workItem from="1495467444864" duration="5686000" />
       <workItem from="1495473151795" duration="1983000" />
-      <workItem from="1495957173638" duration="6611000" />
-    </task>
-    <task id="LOCAL-00007" summary="added endpoint to sitemap.xml">
-      <created>1495393328527</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1495393328527</updated>
+      <workItem from="1495957173638" duration="6834000" />
     </task>
     <task id="LOCAL-00008" summary="added endpoint to sitemap.xml">
       <created>1495467466415</created>
@@ -772,11 +765,18 @@
       <option name="project" value="LOCAL" />
       <updated>1495964870778</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="trying to upload image">
+      <created>1495964941451</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1495964941451</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20221000" />
+    <option name="totallyTimeSpent" value="20444000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="953" y="0" width="974" height="1047" extended-state="0" />
@@ -1019,7 +1019,7 @@
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="507">
-          <caret line="82" column="43" lean-forward="false" selection-start-line="82" selection-start-column="43" selection-end-line="82" selection-end-column="43" />
+          <caret line="82" column="31" lean-forward="false" selection-start-line="82" selection-start-column="31" selection-end-line="82" selection-end-column="31" />
           <folding />
         </state>
       </provider>

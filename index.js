@@ -80,7 +80,7 @@ try {
 
             // var imgPath = file.image.path;
 
-            console.log(files.valueOf('file'));
+            console.log(files[0]);
 
             blobClient.createBlockBlobFromLocalFile(containerName, itemID, files.path, options,
                 function(error){
