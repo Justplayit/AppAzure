@@ -59,9 +59,9 @@ try {
         // form.multiples = true;
         // form.uploadDir = path.join(__dirname, '/uploads/');
 
-        form.on('file', function (field, file) {
-            fs.rename(file.path, path.join(form.uploadDir, file.name));
-        });
+        // form.on('file', function (field, file) {
+        //     fs.rename(file.path, path.join(form.uploadDir, file.name));
+        // });
 
         form.on('error', function (error) {
             console.log('An error occurred: \n' + error);
