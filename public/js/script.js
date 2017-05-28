@@ -41,7 +41,7 @@ $(document).ready(function() {
 
 function search(){
     var toSearch = document.getElementById("search-id").value;
-
+console.log("apeleaza searach");
     if( toSearch === '' ){
         alert("Please fill the search box...!!!!!!");
         return false;
