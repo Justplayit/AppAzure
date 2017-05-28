@@ -4,6 +4,8 @@ var path = require('path');
 var server = require('http').createServer(app);
 var formidable = require('formidable');
 var fs = require('fs');
+var router = express.Router();
+var ImageUpload = require('express-azure-image-upload');
 
 try {
     server.listen(process.env.PORT || 1337);
@@ -31,29 +33,19 @@ try {
         response.sendFile(__dirname, 'BingSiteAuth.xml');
     });
 
-    app.post('/upload', function (request, response) {
-        var form = new formidable.IncomingForm();
-        form.multiples = true;
-        form.uploadDir = path.join(__dirname, '/uploads/');
+    function imageHandler () {
+        var storageAccount = '';
+        var storageKey = '';
+        var storageContainer = '';
 
-        form.on('file', function (field, file) {
-            fs.rename(file.path, path.join(form.uploadDir, file.name));
-        });
+        var upload = new ImageUpload(storageAccount, storageKey, storageContainer);
 
-        form.on('error', function (error) {
-           console.log('An error occurred: \n' + error);
-        });
-
-        form.on('end', function () {
-            response.end('success');
-        });
-
-        form.parse(request);
-
-    });
-
+        return upload.handler;
     }
-    catch(err){
-        console.log(err);
+
+    app.post('/upload', imageHandler());
+
+} catch(err){
+    console.log(err);
 }
 

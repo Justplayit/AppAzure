@@ -44,38 +44,39 @@ $(document).ready(function() {
 
 
 function search(){
-var toSearch = document.getElementById("search-id").value;
+    var toSearch = document.getElementById("search-id").value;
 
-if( toSearch ==='' ){
-alert("Please fill the search box...!!!!!!");
-return false;
-}
+    if( toSearch === '' ){
+        alert("Please fill the search box...!!!!!!");
+        return false;
+    }
     else
     {
-var url="  https://api.cognitive.microsoft.com/bing/v5.0/search?q=";
-url=url+toSearch+"&count=10&offset=0&mkt=en-us&safesearch=Moderate";
-     
+        var url="  https://api.cognitive.microsoft.com/bing/v5.0/search?q=";
+        url=url+toSearch+"&count=10&offset=0&mkt=en-us&safesearch=Moderate";
+
         var xhr = new XMLHttpRequest();
-xhr.open('GET', url, true);
-       xhr.setRequestHeader("Ocp-Apim-Subscription-Key", "c9a9ed180e704db79a2419e518d5a637");
-xhr.send();
+        xhr.open('GET', url, true);
+        xhr.setRequestHeader("Ocp-Apim-Subscription-Key", "c9a9ed180e704db79a2419e518d5a637");
+        xhr.send();
 
         
         xhr.onreadystatechange = processRequest;
  
-function processRequest(e) {
-   if (xhr.readyState == 4) {
-  var response = JSON.parse(xhr.responseText);
-       var imgs=response.images.value;
-       var arrayLength = imgs.length;
-       document.getElementById("resp-id").innerHTML="";
-for (var i = 0; i < arrayLength; i++) {
-    document.getElementById("resp-id").innerHTML+='<img src=\"'+imgs[i].thumbnailUrl+'\">';
-    //Do something
-}
-   console.log(response.images.value[0].thumbnailUrl);
+        function processRequest(e) {
+            if (xhr.readyState === 4) {
+                var response = JSON.parse(xhr.responseText);
+                var imgs=response.images.value;
+                var arrayLength = imgs.length;
+                document.getElementById("resp-id").innerHTML="";
+
+                for (var i = 0; i < arrayLength; i++) {
+                    document.getElementById("resp-id").innerHTML+='<img src=\"'+imgs[i].thumbnailUrl+'\">';
+                //Do something
+                }
+               console.log(response.images.value[0].thumbnailUrl);
+            }
+        }
     }
-}
-}
 }
 
