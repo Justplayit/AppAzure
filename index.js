@@ -5,7 +5,6 @@ var server = require('http').createServer(app);
 var formidable = require('formidable');
 var fs = require('fs');
 var azure = require('azure-storage');
-var lwip = require('lwip');
 
 const storageAccount = '';
 const storageAccessKey = '';
