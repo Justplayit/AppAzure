@@ -20,23 +20,19 @@ $(document).ready(function() {
            formData.append('files', file, file.name);
        }
 
-       $.ajax({
-          url: '/upload',
-           type: 'POST',
-           data: formData,
-           processData: false,
-           contentType: false,
-           success: function (data) {
-               console.log('upload successful!');
-           },
-           xhr: function () {
-               var xhr = new XMLHttpRequest();
-               // xhr.upload.addEventListener('progress', function () {
-               //
-               // });
-
-               return xhr;
-           }
+    $.ajax({
+        url: '/upload',
+        type: 'POST',
+        data: formData,
+        processData: false,
+        contentType: false,
+        success: function (data) {
+            console.log('upload successful!');
+            modal.css('visibility', 'hidden');
+        },
+        xhr: function () {
+            return new XMLHttpRequest();
+        }
        });
     });
 
