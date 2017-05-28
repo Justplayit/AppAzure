@@ -71,16 +71,16 @@ try {
             response.end('success');
         });
 
-        form.parse(request, function (error, file) {
+        form.parse(request, function (error, fields, files) {
+            var itemID = new Date().getTime();
             var options = {
                 contentType: 'image/jpeg',
-                metadata: {fileName: 'file'}
+                metadata: {fileName: itemID}
             };
 
             // var imgPath = file.image.path;
-            var itemID = new Date().getTime();
 
-            blobClient.createBlockBlobFromLocalFile(containerName, itemID, file.uploadedFile.path, options,
+            blobClient.createBlockBlobFromLocalFile(containerName, itemID, files.uploadedFile.path, options,
                 function(error){
                     if(error !== null){
                         console.log('Azure full error: ', error);
