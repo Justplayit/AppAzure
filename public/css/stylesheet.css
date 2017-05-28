@@ -10,21 +10,21 @@ body{
     padding: 0px;
 }
 
-#new-post{
+#new-post, #browse, #search-button{
     /*margin-bottom: 5px;*/
-    background-color: rgb(76, 69, 81);
+    background-color: rgb(95, 93, 110);
     border: none;
     transition: background-color, 1s;
     color: #cecece;
     border-radius: 25px;
-    width: 170px;
-    height: 45px;
+    width: 120px;
+    height: 35px;
     margin-top: 10px;
     font-size: 0.85em;
     font-weight: bold;
 }
 
-#new-post:hover{
+#new-post:hover, #browse:hover, #search-button:hover{
     /*background-color: #11a985;*/
     background-color: rgba(118, 204, 119, 0.81);
     color: white;
@@ -60,26 +60,32 @@ body{
 }
 
 #browse{
-    margin-top: 10px;
+    /*margin-top: 10px;*/
     margin-bottom: 10px;
-    border-radius: 20px;
-    border: none;
+    /*border-radius: 20px;*/
+    /*border: none;*/
     background-color: rgb(95, 93, 110);
-    width: 120px;
-    height: 40px;
-    color: #b4b4b4;
-    font-weight: bold;
-    transition: color 1s, background-color 1s;
-    font-size: 12px;
-    line-height: 30px;
+    /*width: 120px;*/
+    /*height: 40px;*/
+    /*color: #b4b4b4;*/
+    /*font-weight: bold;*/
+    /*transition: color 1s, background-color 1s;*/
+    /*font-size: 12px;*/
+    line-height: 20px;
 }
 
-#browse:hover{
-    color: white;
-    background-color: rgba(118, 204, 119, 0.81);
-}
+/*#browse:hover{*/
+    /*color: white;*/
+    /*background-color: rgba(118, 204, 119, 0.81);*/
+/*}*/
 
 #file-dialog{
     visibility: hidden;
     z-index: 100;
+}
+
+#search-box{
+    margin-top: 10px;
+    border-radius: 15px;
+    border: none;
 }
