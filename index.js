@@ -8,7 +8,6 @@ var azure = require('azure-storage');
 
 const storageAccount = 'azureappb4';
 const storageAccessKey = 'M28H+AO14p6JiUDg6HeRQNPsYycCeLw4mMMSxNXSk5m5LjIt8jx11YULjXPDvGcgftjiGT089TDB3WLWhpkfJg==';
-const azureEndpoint = 'DefaultEndpointsProtocol=https;AccountName=azureappb4;AccountKey=M28H+AO14p6JiUDg6HeRQNPsYycCeLw4mMMSxNXSk5m5LjIt8jx11YULjXPDvGcgftjiGT089TDB3WLWhpkfJg==;EndpointSuffix=core.windows.net';
 const containerName = 'azureappb4';
 
 var blobClient = azure.createBlobService(storageAccount, storageAccessKey);
