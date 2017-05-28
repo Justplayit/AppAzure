@@ -4,8 +4,13 @@ var path = require('path');
 var server = require('http').createServer(app);
 var formidable = require('formidable');
 var fs = require('fs');
-var router = express.Router();
-var ImageUpload = require('express-azure-image-upload');
+var azure = require('azure-storage');
+var lwip = require('lwip');
+
+const storageAccount = '';
+const storageAccessKey = '';
+const azureEndpoint = '';
+const containerName = '';
 
 try {
     server.listen(process.env.PORT || 1337);
@@ -32,18 +37,10 @@ try {
         }
         response.sendFile(__dirname, 'BingSiteAuth.xml');
     });
+    
+    app.post('/upload', function (response, request) {
 
-    function imageHandler () {
-        var storageAccount = '';
-        var storageKey = '';
-        var storageContainer = '';
-
-        var upload = new ImageUpload(storageAccount, storageKey, storageContainer);
-
-        return upload.handler;
-    }
-
-    app.post('/upload', imageHandler());
+    });
 
 } catch(err){
     console.log(err);
