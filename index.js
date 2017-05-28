@@ -55,7 +55,7 @@ try {
     app.post('/upload', function (response, request) {
         var form = new formidable.IncomingForm();
         var itemID = new Date().getTime();
-        form.parse(req, function(err, fields, files){
+        form.parse(request, function(err, fields, files){
            var options = {
                contentType: 'image/jpeg',
                metadata: {fileName: itemID}
