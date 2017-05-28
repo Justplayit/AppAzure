@@ -53,6 +53,7 @@ try {
     // };
 
     app.post('/upload', function (request, response) {
+        console.log('Here');
 
         var form = new formidable.IncomingForm();
         // form.multiples = true;
