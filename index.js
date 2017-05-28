@@ -38,44 +38,27 @@ try {
         }
         response.sendFile(__dirname, 'BingSiteAuth.xml');
     });
-    //
-    // var uploadFull = function(imgPath, itemId, options){
-    //     var fileName = itemId + '.jpg';
-    //     blobClient.createBlockBlobFromLocalFile(containerName, fileName, imgPath, options,
-    //         function(error){
-    //             if(error !== null){
-    //                 console.log('Azure full error: ', error);
-    //             }
-    //             else{
-    //                 console.log('Azure full success.');
-    //             }
-    //         });
-    // };
 
     app.post('/upload', function (request, response) {
         console.log('Here');
 
         var form = new formidable.IncomingForm();
-        // form.multiples = true;
-        // form.uploadDir = path.join(__dirname, '/uploads/');
-
-        // form.on('file', function (field, file) {
-        //     fs.rename(file.path, path.join(form.uploadDir, file.name));
-        // });
 
         form.on('error', function (error) {
             console.log('An error occurred: \n' + error);
         });
 
         form.on('end', function () {
-            response.end('success');
+            console.log('success')
         });
 
         form.parse(request, function (error, fields, files) {
             var itemID = new Date().getTime();
             var options = {
                 contentType: 'image/jpeg',
-                metadata: {fileName: itemID}
+                metadata: {
+                    fileName: itemID
+                }
             };
 
             blobClient.createBlockBlobFromLocalFile(containerName, itemID + '.jpeg', files['files'].path, options,
@@ -89,21 +72,6 @@ try {
                 });
         });
 
-        // console.log('Request >> ', request)
-        // var form = new formidable.IncomingForm();
-        // var itemID = new Date().getTime();
-        //
-        // form.parse(request, function(err, fields, files){
-        //    var options = {
-        //        contentType: 'image/jpeg',
-        //        metadata: {fileName: itemID}
-        //    };
-        //    var imgPath = files.image.path;
-        //    var machineID = fields.machineId;
-        //    var userName = fields.userName;
-        //
-        //    uploadFull(imgPath, itemID, options);
-        // });
     });
 
 } catch(err){
