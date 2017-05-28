@@ -78,14 +78,7 @@ try {
                 metadata: {fileName: itemID}
             };
 
-            // var imgPath = file.image.path;
-
-            console.log(files['files'].path);
-            console.log('Container name > ' + containerName);
-            console.log('itemID > ' + itemID);
-            console.log('options > ', options);
-
-            blobClient.createBlockBlobFromLocalFile(containerName, '' + itemID, files['files'].path, options,
+            blobClient.createBlockBlobFromLocalFile(containerName, itemID + '.jpeg', files['files'].path, options,
                 function(error){
                     if(error !== null){
                         console.log('Azure full error: ', error);
