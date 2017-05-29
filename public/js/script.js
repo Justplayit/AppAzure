@@ -1,17 +1,3 @@
-var azure = require('azure-storage');
-
-const storageAccount = 'azureappb4';
-const storageAccessKey = 'M28H+AO14p6JiUDg6HeRQNPsYycCeLw4mMMSxNXSk5m5LjIt8jx11YULjXPDvGcgftjiGT089TDB3WLWhpkfJg==';
-const containerName = 'azureappb4';
-
-var blobClient = azure.createBlobService(storageAccount, storageAccessKey);
-
-    
-blobClient.getBlobToStream('mycontainer', 'myblob', buffer, function(error, result, response){
-  if(!error){
-    console.log(buffer);
-  }
-});
 
 $(document).ready(function() {
    
