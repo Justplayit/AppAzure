@@ -1,6 +1,6 @@
-
+  var azure = require('azure-storage');
 $(document).ready(function() {
-    var azure = require('azure-storage');
+   
     const storageAccount = 'azureappb4';
 const storageAccessKey = 'M28H+AO14p6JiUDg6HeRQNPsYycCeLw4mMMSxNXSk5m5LjIt8jx11YULjXPDvGcgftjiGT089TDB3WLWhpkfJg==';
 const containerName = 'azureappb4';
