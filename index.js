@@ -12,12 +12,6 @@ const containerName = 'azureappb4';
 
 var blobClient = azure.createBlobService(storageAccount, storageAccessKey);
 
-    
-blobClient.getBlobToStream('mycontainer', 'myblob', buffer, function(error, result, response){
-  if(!error){
-    console.log(buffer);
-  }
-});
 
 
 try {
