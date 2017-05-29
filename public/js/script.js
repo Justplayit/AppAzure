@@ -1,7 +1,6 @@
-  var azure = require('azure-storage');
-$(document).ready(function() {
-   
-    const storageAccount = 'azureappb4';
+var azure = require('azure-storage');
+
+const storageAccount = 'azureappb4';
 const storageAccessKey = 'M28H+AO14p6JiUDg6HeRQNPsYycCeLw4mMMSxNXSk5m5LjIt8jx11YULjXPDvGcgftjiGT089TDB3WLWhpkfJg==';
 const containerName = 'azureappb4';
 
@@ -13,6 +12,10 @@ blobClient.getBlobToStream('mycontainer', 'myblob', buffer, function(error, resu
     console.log(buffer);
   }
 });
+
+$(document).ready(function() {
+   
+
     
     var modal = $('#upload-area');
     modal.css('margin-top', (window.innerHeight/2) - $('#upload').height());
