@@ -1,9 +1,9 @@
 
 $(document).ready(function() {
    var xhr = new XMLHttpRequest();
-      url="https://azureappb4.core.windows.net/azureappb4?restype=directory&?comp=list&maxresults=3";
+      url="https://myaccount.blob.core.windows.net/?comp=list";
         xhr.open('GET', url, true);
-        xhr.setRequestHeader("x-ms-version", "2015-02-21");
+        xhr.setRequestHeader("x-ms-version", "2016-05-31");
          xhr.setRequestHeader("x-ms-date", Date());
          xhr.setRequestHeader("Authorization", "SharedKey myaccount:M28H+AO14p6JiUDg6HeRQNPsYycCeLw4mMMSxNXSk5m5LjIt8jx11YULjXPDvGcgftjiGT089TDB3WLWhpkfJg==");
         xhr.send();
