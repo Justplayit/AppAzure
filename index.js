@@ -51,7 +51,7 @@ blobClient.getBlobToText(
         } else {
             console.log("Sucessfully downloaded blob %s", blobName);
             console.log(blobContent);
-            response.send(blobContent);
+            response.send("what is tihs");
         }
     });
 
