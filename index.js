@@ -38,17 +38,27 @@ try {
             console.log(request);
         }
 
-    var blobName = '1495969469290.jpeg';
-blobClient.getBlobToText(
+    var fileName = '1495969469290.jpeg';
+
+var blobName = '1495969469290.jpeg';
+blobService.getBlobToFile(
     "azureappb4",
     blobName,
-    function(err, blobContent, blob) {
+    fileName,
+    function(err, blob) {
         if (err) {
             console.error("Couldn't download blob %s", blobName);
             console.error(err);
         } else {
-            console.log("Sucessfully downloaded blob %s", blobName);
-            response.send(blobContent);
+            console.log("Sucessfully downloaded blob %s to %s", blobName, fileName);
+            fs.readFile(fileName, function(err, fileContents) {
+                if (err) {
+                    console.error("Couldn't read file %s", fileName);
+                    console.error(err);
+                } else {
+                    console.log(fileContents);
+                }
+            });
         }
     });
      
