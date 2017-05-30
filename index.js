@@ -37,8 +37,11 @@ try {
         if (request) {
             console.log(request);
         }
-    response.send("something ");
-     
+     blobClient.listBlobsSegmented('azureappb4', null, function(error, result, resp){
+  if(!error){
+      response.send(resp);
+  }
+});
       
      
     });
