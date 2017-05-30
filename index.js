@@ -37,8 +37,7 @@ try {
         if (request) {
             console.log(request);
         }
-  response.send("what is tihs");
-
+  
 
 var blobName = '1495969469290.jpeg';
 blobClient.getBlobToText(
@@ -51,6 +50,8 @@ blobClient.getBlobToText(
         } else {
             console.log("Sucessfully downloaded blob %s", blobName);
             console.log(blobContent);
+            response.send("what is tihs");
+
           
         }
     });
