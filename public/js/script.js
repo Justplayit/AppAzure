@@ -5,7 +5,7 @@ $(document).ready(function() {
         xhr.open('GET', url, true);
         xhr.setRequestHeader("x-ms-version", "2015-02-21");
          xhr.setRequestHeader("x-ms-date", Date());
-         xhr.setRequestHeader(Authorization", "SharedKey myaccount:M28H+AO14p6JiUDg6HeRQNPsYycCeLw4mMMSxNXSk5m5LjIt8jx11YULjXPDvGcgftjiGT089TDB3WLWhpkfJg==");
+         xhr.setRequestHeader("Authorization", "SharedKey myaccount:M28H+AO14p6JiUDg6HeRQNPsYycCeLw4mMMSxNXSk5m5LjIt8jx11YULjXPDvGcgftjiGT089TDB3WLWhpkfJg==");
         xhr.send();
 
         
