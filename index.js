@@ -40,7 +40,7 @@ try {
 
     var fileName = '1495969469290.jpeg';
 
-var blobName = '1495969469290.jpeg';
+var blobName = 'appazureb4';
 
 blobClient.getBlobToFile(
     containerName,
