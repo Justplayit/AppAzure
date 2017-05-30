@@ -49,7 +49,7 @@ try {
              }
         });
      
-        response.send(resp);
+      
         
     });
 
