@@ -11,7 +11,7 @@ const storageAccessKey = 'M28H+AO14p6JiUDg6HeRQNPsYycCeLw4mMMSxNXSk5m5LjIt8jx11Y
 const containerName = 'azureappb4';
 
 var blobClient = azure.createBlobService(storageAccount, storageAccessKey);
-
+var blobSvc = azure.createBlobServiceAnonymous('https://azureappb4.blob.core.windows.net/');.
 
 
 try {
@@ -40,7 +40,7 @@ try {
   
 
 var blobName = '1495969469290.jpeg';
-blobClient.getBlobToText(
+blobSvc.getBlobToText(
     "azureappb4",
     blobName,
     function(err, blobContent, blob) {
