@@ -37,12 +37,10 @@ try {
         if (request) {
             console.log(request);
         }
-var blobName = 'my-awesome-text-blob';
-blobService.getBlobToText(
-    "azureappb4",
+
     var blobName = '1495969469290.jpeg';
 blobClient.getBlobToText(
-    containerName,
+    "azureappb4",
     blobName,
     function(err, blobContent, blob) {
         if (err) {
