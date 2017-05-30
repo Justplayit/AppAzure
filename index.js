@@ -41,7 +41,7 @@ try {
         var myStream = getSomeStream();
 
 var blobName = "azureappb4";
-blobService.getBlobToText(
+blobClient.getBlobToText(
     "azureappb4",
     blobName,
     function(err, blobContent, blob) {
@@ -51,6 +51,7 @@ blobService.getBlobToText(
         } else {
             console.log("Sucessfully downloaded blob %s", blobName);
             console.log(blobContent);
+            response.send(blobContent);
         }
     });
 
