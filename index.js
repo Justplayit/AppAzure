@@ -40,12 +40,12 @@ try {
         resp="something nice";
         blobClient.listBlobsSegmented('azureappb4', null, function(error, result, response){
           if(!error){
-           resp+=" food";
+             response.send(resp);
       // result.entries contains the entries
       // If not all blobs were returned, result.continuationToken has the continuation token.
              }
         });
-        response.send(resp);
+       
     });
 
     app.get('/BingSiteAuth.xml', function (request, response) {
