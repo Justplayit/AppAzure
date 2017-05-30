@@ -11,7 +11,7 @@ const storageAccessKey = 'M28H+AO14p6JiUDg6HeRQNPsYycCeLw4mMMSxNXSk5m5LjIt8jx11Y
 const containerName = 'azureappb4';
 
 var blobClient = azure.createBlobService(storageAccount, storageAccessKey);
-var blobSvc = azure.createBlobServiceAnonymous('https://azureappb4.blob.core.windows.net/');.
+var blobSvc = azure.createBlobServiceAnonymous('https://azureappb4.blob.core.windows.net/');
 
 
 try {
