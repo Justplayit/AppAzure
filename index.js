@@ -38,13 +38,13 @@ try {
             console.log(request);
         }
         resp="something nice";
-blobSvc.listBlobsSegmented('mycontainer', null, function(error, result, response){
-  if(!error){
-      resp+=response;
+        blobSvc.listBlobsSegmented('mycontainer', null, function(error, result, response){
+          if(!error){
+           resp+=response;
       // result.entries contains the entries
       // If not all blobs were returned, result.continuationToken has the continuation token.
-  }
-});
+             }
+        });
         response.send(resp);
     });
 
