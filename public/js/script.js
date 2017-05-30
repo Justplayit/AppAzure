@@ -1,6 +1,19 @@
 
 $(document).ready(function() {
-   
+   var xhr = new XMLHttpRequest();
+        xhr.open('GET', url, true);
+        xhr.setRequestHeader("Ocp-Apim-Subscription-Key", "c9a9ed180e704db79a2419e518d5a637");
+        xhr.send();
+
+        
+        xhr.onreadystatechange = processRequest;
+ 
+        function processRequest(e) {
+            if (xhr.readyState === 4) {
+         var response = JSON.parse(xhr.responseText);
+            console.log(response);
+            }
+        }
 
     
     var modal = $('#upload-area');
