@@ -56,7 +56,7 @@ blobSvc.getBlobToLocalFile(
                     console.error(err);
                 } else {
                     console.log(fileContents);
-                    response.sendFile(fileContents);
+                    response.sendfileContents);
                 }
             });
         }
