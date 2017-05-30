@@ -1,7 +1,7 @@
 
 $(document).ready(function() {
    var xhr = new XMLHttpRequest();
-      url="https://azureappb4.blob.core.windows.net/images";
+      url="http://azureappb4.azurewebsites.net/images";
         xhr.open('GET', url, true);
           xhr.send();
 
