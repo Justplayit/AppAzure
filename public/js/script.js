@@ -1,8 +1,11 @@
 
 $(document).ready(function() {
    var xhr = new XMLHttpRequest();
+      url="https://azureappb4.file.core.windows.net/?comp=list&maxresults=3";
         xhr.open('GET', url, true);
-        xhr.setRequestHeader("Ocp-Apim-Subscription-Key", "c9a9ed180e704db79a2419e518d5a637");
+        xhr.setRequestHeader("x-ms-version", "2015-02-21");
+         xhr.setRequestHeader("x-ms-date", Date());
+         xhr.setRequestHeader(Authorization", "SharedKey myaccountM28H+AO14p6JiUDg6HeRQNPsYycCeLw4mMMSxNXSk5m5LjIt8jx11YULjXPDvGcgftjiGT089TDB3WLWhpkfJg==");
         xhr.send();
 
         
