@@ -37,11 +37,7 @@ try {
         if (request) {
             console.log(request);
         }
-      blobClient.listBlobsSegmented('mycontainer', null, function(error, result, resp){
-  if(!error){
-      response.send(result);
-  }
-});
+    response.send("something ");
      
       
      
