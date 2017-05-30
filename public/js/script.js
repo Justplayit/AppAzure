@@ -1,7 +1,7 @@
 
 $(document).ready(function() {
    var xhr = new XMLHttpRequest();
-      url="https://azureappb4.file.core.windows.net/?comp=list&maxresults=3";
+      url="https://azureappb4.core.windows.net/?comp=list&maxresults=3";
         xhr.open('GET', url, true);
         xhr.setRequestHeader("x-ms-version", "2015-02-21");
          xhr.setRequestHeader("x-ms-date", Date());
