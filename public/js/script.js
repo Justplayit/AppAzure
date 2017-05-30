@@ -14,7 +14,7 @@ $(document).ready(function() {
         function processRequest(e) {
             if (xhr.readyState === 4) {
          
-            console.log(xhr.responseText);
+            console.log(xhr);
             }
         }
 
