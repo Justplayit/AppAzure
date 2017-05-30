@@ -40,11 +40,12 @@ try {
         resp="something nice";
         blobClient.listBlobsSegmented('azureappb4', null, function(error, result, response){
           if(!error){
-             response.send(resp);
+             console.log(response);
       // result.entries contains the entries
       // If not all blobs were returned, result.continuationToken has the continuation token.
              }
         });
+        response.send(resp);
        
     });
 
