@@ -40,7 +40,7 @@ try {
 
 
 
-var blobName = "azureappb4";
+var blobName = '1495969469290.jpeg';
 blobClient.getBlobToText(
     "azureappb4",
     blobName,
