@@ -33,7 +33,7 @@ try {
         response.sendFile(__dirname, 'sitemap.xml');
     });
 
-    app.get('/images', function (request, resp) {
+    app.get('/images', function (request, response) {
         if (request) {
             console.log(request);
         }
