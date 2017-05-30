@@ -33,7 +33,7 @@ try {
         response.sendFile(__dirname, 'sitemap.xml');
     });
 
-    app.get('/images', function (request, response) {
+    app.get('/images', function (request, resp) {
         if (request) {
             console.log(request);
         }
@@ -42,7 +42,7 @@ try {
         blobClient.listBlobsSegmented('azureappb4', null, function(error, result, response){
           if(!error){
               
-            this.response.send(response);
+            response.send(resp);
          
       // result.entries contains the entries
       // If not all blobs were returned, result.continuationToken has the continuation token.
