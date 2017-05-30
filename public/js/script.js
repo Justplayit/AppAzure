@@ -1,12 +1,9 @@
 
 $(document).ready(function() {
    var xhr = new XMLHttpRequest();
-      url="https://azureappb4.blob.core.windows.net/mycontainer?restype=container&?comp=list";
+      url="https://azureappb4.blob.core.windows.net/images";
         xhr.open('GET', url, true);
-        xhr.setRequestHeader("x-ms-version", "2016-05-31");
-         xhr.setRequestHeader("x-ms-date", Date());
-         xhr.setRequestHeader("Authorization", "SharedKey myaccount:?sv=2016-05-31&ss=bfqt&srt=sco&sp=rwdlacup&se=2017-05-30T23:22:24Z&st=2017-05-30T15:22:24Z&spr=https&sig=4o5Ap%2FtxFdIbO3pD1bXutSYZV1SmkCag4T0WzqtiP7I%3D");
-        xhr.send();
+          xhr.send();
 
         
         xhr.onreadystatechange = processRequest;
@@ -15,7 +12,7 @@ $(document).ready(function() {
             if (xhr.readyState === 4) {
          
             console.log(xhr.responseText);
-                console.log(xhr.responeXML);
+               
             }
         }
 
