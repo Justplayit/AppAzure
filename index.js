@@ -37,12 +37,8 @@ try {
         if (request) {
             console.log(request);
         }
-        resp=""
-blobSvc.listBlobsSegmented('azureappb4', null, function(error, result, response){
-  if(!error){
-      resp=response;
-  }
-});
+        resp="something nice";
+
         response.send(resp);
     });
 
