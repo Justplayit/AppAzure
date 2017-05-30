@@ -39,7 +39,7 @@ try {
         }
         resp="something nice";
             ok=0;
-        resp=blobClient.listBlobsSegmented('azureappb4', null, function(error, result, response){
+        blobClient.listBlobsSegmented('azureappb4', null, function(error, result, response){
           if(!error){
               
             resp+=response;
