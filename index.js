@@ -38,52 +38,11 @@ try {
             console.log(request);
         }
   
-var fileName = 'hello-world.jpeg';
-var blobName = 'my-awesome-file-blob';
-blobSvc.getBlobToLocalFile(
-    containerName,
-    '1495969469290.jpeg',
-    fileName,
-    function(err, blob) {
-        if (err) {
-            console.error("Couldn't download blob %s", blobName);
-            console.error(err);
-        } else {
-            console.log("Sucessfully downloaded blob %s to %s", blobName, fileName);
-            fs.readFile(fileName, function(err, fileContents) {
-                if (err) {
-                    console.error("Couldn't read file %s", fileName);
-                    console.error(err);
-                } else {
-                    console.log(fileContents);
-                    response.send(fileContents);
-                }
-            });
-        }
-    });
-        
-
-var blobName = '1495969469290.jpeg';
-blobSvc.getBlobToText(
-    "azureappb4",
-    blobName,
-    function(err, blobContent, blob) {
-        if (err) {
-            console.error("Couldn't download blob %s", blobName);
-            console.error(err);
-        } else {
-            console.log("Sucessfully downloaded blob %s", blobName);
-            console.log(blobContent);
-            
-
-          
-        }
-    });
-
         
    blobClient.listBlobsSegmented('azureappb4', null, function(error, result, resp){
   if(!error){
      console.log(resp);
+      response.send(result);
       // result.entries contains the entries
       // If not all blobs were returned, result.continuationToken has the continuation token.
   }
