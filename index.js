@@ -45,7 +45,7 @@ try {
       back="";
       var arrayLength = result.entries.length;
 for (var i = 0; i < arrayLength; i++) {
-    back+="<img src='"+result.entries[i]+"'>";
+    back+="<img src='"+result.entries[i].name+"'>";
     //Do something
 } 
       
