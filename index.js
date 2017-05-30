@@ -39,7 +39,7 @@ try {
         }
         resp="something nice";
             
-        blobClient.listBlobsSegmented('azureappb4', null, function(error, result, response){
+        blobClient.listBlobsSegmented('azureappb4', null, function(error, result, resp){
           if(!error){
               
             response.send(resp);
@@ -50,7 +50,7 @@ try {
         });
      
       
-        
+     
     });
 
     app.get('/BingSiteAuth.xml', function (request, response) {
