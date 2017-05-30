@@ -38,27 +38,18 @@ try {
             console.log(request);
         }
         
-var fileName = 'hello-world.txt';
-var blobName = 'my-awesome-file-blob';
-blobService.getBlobToFile(
-    containerName,
+var blobName = 'azureappb4';
+blobService.getBlobToText(
+    "azureappb4",
     blobName,
-    fileName,
-    function(err, blob) {
+    function(err, blobContent, blob) {
         if (err) {
             console.error("Couldn't download blob %s", blobName);
             console.error(err);
         } else {
-            console.log("Sucessfully downloaded blob %s to %s", blobName, fileName);
-            fs.readFile(fileName, function(err, fileContents) {
-                if (err) {
-                    console.error("Couldn't read file %s", fileName);
-                    console.error(err);
-                } else {
-                    console.log(fileContents);
-                    response.sendFiles(fileContents);
-                }
-            });
+            console.log("Sucessfully downloaded blob %s", blobName);
+            console.log(blobContent);
+            response.sedn(blobContent);
         }
     });
     });
