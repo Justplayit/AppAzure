@@ -38,20 +38,11 @@ try {
             console.log(request);
         }
         
-var blobName = 'azureappb4';
-blobService.getBlobToText(
-    "azureappb4",
-    blobName,
-    function(err, blobContent, blob) {
-        if (err) {
-            console.error("Couldn't download blob %s", blobName);
-            console.error(err);
-        } else {
-            console.log("Sucessfully downloaded blob %s", blobName);
-            console.log(blobContent);
-            response.sedn(blobContent);
-        }
-    });
+blobSvc.listBlobsSegmented('azureappb4', null, function(error, result, response){
+  if(!error){
+      response.send(response);
+  }
+});
     });
 
     app.get('/BingSiteAuth.xml', function (request, response) {
