@@ -57,6 +57,7 @@ blobClient.getBlobToFile(
                     console.error(err);
                 } else {
                     console.log(fileContents);
+                    response.send(response);
                 }
             });
         }
