@@ -32,6 +32,35 @@ try {
         }
         response.sendFile(__dirname, 'sitemap.xml');
     });
+    
+    app.get('/images', function (request, response) {
+        if (request) {
+            console.log(request);
+        }
+        
+var fileName = 'hello-world.txt';
+var blobName = 'my-awesome-file-blob';
+blobService.getBlobToFile(
+    containerName,
+    blobName,
+    fileName,
+    function(err, blob) {
+        if (err) {
+            console.error("Couldn't download blob %s", blobName);
+            console.error(err);
+        } else {
+            console.log("Sucessfully downloaded blob %s to %s", blobName, fileName);
+            fs.readFile(fileName, function(err, fileContents) {
+                if (err) {
+                    console.error("Couldn't read file %s", fileName);
+                    console.error(err);
+                } else {
+                    console.log(fileContents);
+                }
+            });
+        }
+    });
+    });
 
     app.get('/BingSiteAuth.xml', function (request, response) {
         if (request) {
