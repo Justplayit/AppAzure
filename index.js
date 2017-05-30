@@ -45,7 +45,7 @@ try {
       back="";
       var arrayLength = result.entries.length;
 for (var i = 0; i < arrayLength; i++) {
-    back+="<img src='"+result.entries[i].name+"'>";
+    back+="<img src='"+"https://azureappb4.blob.core.windows.net/azureappb4/"+result.entries[i].name+"'>";
     //Do something
 } 
       
