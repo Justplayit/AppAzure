@@ -13,8 +13,8 @@ $(document).ready(function() {
  
         function processRequest(e) {
             if (xhr.readyState === 4) {
-         var response = JSON.parse(xhr.responseText);
-            console.log(response);
+         
+            console.log(xhr.responseText);
             }
         }
 
