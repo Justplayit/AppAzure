@@ -38,7 +38,7 @@ try {
             console.log(request);
         }
 
-        var myStream = getSomeStream();
+
 
 var blobName = "azureappb4";
 blobClient.getBlobToText(
