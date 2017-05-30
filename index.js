@@ -32,21 +32,30 @@ try {
         }
         response.sendFile(__dirname, 'sitemap.xml');
     });
-    
+
     app.get('/images', function (request, response) {
         if (request) {
             console.log(request);
         }
         resp="something nice";
+            ok=0;
         resp=blobClient.listBlobsSegmented('azureappb4', null, function(error, result, response){
           if(!error){
-             return "spmething nice";
+              
+            resp+=response;
+              ok=1;
       // result.entries contains the entries
       // If not all blobs were returned, result.continuationToken has the continuation token.
              }
         });
+        i=0;
+        while(ok==0){
+           i+=1; 
+        
+        }
+        ok=0;
         response.send(resp);
-       
+        
     });
 
     app.get('/BingSiteAuth.xml', function (request, response) {
