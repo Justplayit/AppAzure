@@ -14,7 +14,7 @@ $(document).ready(function() {
         function processRequest(e) {
             if (xhr.readyState === 4) {
          
-            console.log((new XMLSerializer()).serializeToString(xhr.responseXML));
+            console.log(xhr.responseText);
             }
         }
 
