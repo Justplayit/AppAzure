@@ -42,7 +42,14 @@ try {
    blobClient.listBlobsSegmented('azureappb4', null, function(error, result, resp){
   if(!error){
      console.log(resp);
-      response.send(result.entries[0].name);
+      back="";
+      var arrayLength = result.entries.length;
+for (var i = 0; i < arrayLength; i++) {
+    back+="<img src='"+result.entries[i]+"'>";
+    //Do something
+} 
+      
+      response.send(back);
       // result.entries contains the entries
       // If not all blobs were returned, result.continuationToken has the continuation token.
   }
