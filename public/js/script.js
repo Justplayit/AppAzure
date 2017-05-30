@@ -1,7 +1,7 @@
 
 $(document).ready(function() {
    var xhr = new XMLHttpRequest();
-      url="https://myaccount.blob.core.windows.net/?comp=list";
+      url="https://azureappb4.blob.core.windows.net/?comp=list";
         xhr.open('GET', url, true);
         xhr.setRequestHeader("x-ms-version", "2016-05-31");
          xhr.setRequestHeader("x-ms-date", Date());
