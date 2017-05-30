@@ -37,20 +37,11 @@ try {
         if (request) {
             console.log(request);
         }
-       var blobName = 'blob';
-blobService.getBlobToText(
-    "azureappb4",
-    blobName,
-    function(err, blobContent, blob) {
-        if (err) {
-            console.error("Couldn't download blob %s", blobName);
-            console.error(err);
-        } else {
-            console.log("Sucessfully downloaded blob %s", blobName);
-            console.log(blobContent);
-            response.send(blobContent);
-        }
-    });
+      blobClient.listBlobsSegmented('mycontainer', null, function(error, result, resp){
+  if(!error){
+      response.send(resp);
+  }
+});
      
       
      
