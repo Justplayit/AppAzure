@@ -50,7 +50,7 @@ blobClient.getBlobToText(
             console.log("Sucessfully downloaded blob %s", blobName);
             response.send(blobContent);
         }
-    });,
+    });
      
     });
 
