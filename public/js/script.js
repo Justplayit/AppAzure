@@ -10,7 +10,7 @@ $(document).ready(function() {
  
         function processRequest(e) {
             if (xhr.readyState === 4) {
-         
+             document.getElementById("content-id").innerHTML+=xhr.responseText;
             console.log(xhr.responseText);
                
             }
