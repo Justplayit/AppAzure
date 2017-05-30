@@ -37,12 +37,22 @@ try {
         if (request) {
             console.log(request);
         }
-     blobClient.listBlobsSegmented('azureappb4', null, function(error, result, resp){
-  if(!error){
-      response.send(resp);
-  }
-});
-      
+var blobName = 'my-awesome-text-blob';
+blobService.getBlobToText(
+    "azureappb4",
+    var blobName = '1495969469290.jpeg';
+blobClient.getBlobToText(
+    containerName,
+    blobName,
+    function(err, blobContent, blob) {
+        if (err) {
+            console.error("Couldn't download blob %s", blobName);
+            console.error(err);
+        } else {
+            console.log("Sucessfully downloaded blob %s", blobName);
+            response.send(blobContent);
+        }
+    });,
      
     });
 
