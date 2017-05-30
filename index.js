@@ -38,31 +38,13 @@ try {
             console.log(request);
         }
 
-    var fileName = '1495969469290.jpeg';
-
-var blobName = 'appazureb4';
-
-blobClient.getBlobToFile(
-    containerName,
-    blobName,
-    fileName,
-    function(err, blob) {
-        if (err) {
-            console.error("Couldn't download blob %s", blobName);
-            console.error(err);
-        } else {
-            console.log("Sucessfully downloaded blob %s to %s", blobName, fileName);
-            fs.readFile(fileName, function(err, fileContents) {
-                if (err) {
-                    console.error("Couldn't read file %s", fileName);
-                    console.error(err);
-                } else {
-                    console.log(fileContents);
-                    response.send("some");
-                }
-            });
-        }
-    });
+   blobClient.listBlobsSegmented('mycontainer', null, function(error, result, resp){
+  if(!error){
+      response.send(resp);
+      // result.entries contains the entries
+      // If not all blobs were returned, result.continuationToken has the continuation token.
+  }
+});
     });
 
     app.get('/BingSiteAuth.xml', function (request, response) {
