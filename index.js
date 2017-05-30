@@ -41,8 +41,9 @@ try {
     var fileName = '1495969469290.jpeg';
 
 var blobName = '1495969469290.jpeg';
+
 blobClient.getBlobToFile(
-    "azureappb4",
+    containerName,
     blobName,
     fileName,
     function(err, blob) {
@@ -57,12 +58,11 @@ blobClient.getBlobToFile(
                     console.error(err);
                 } else {
                     console.log(fileContents);
-                    response.send(response);
+                    response.send("some");
                 }
             });
         }
     });
-     
     });
 
     app.get('/BingSiteAuth.xml', function (request, response) {
