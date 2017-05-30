@@ -38,22 +38,17 @@ try {
             console.log(request);
         }
         resp="something nice";
-            ok=0;
+            
         blobClient.listBlobsSegmented('azureappb4', null, function(error, result, response){
           if(!error){
               
             resp+=response;
-              ok=1;
+         
       // result.entries contains the entries
       // If not all blobs were returned, result.continuationToken has the continuation token.
              }
         });
-        i=0;
-        while(ok==0){
-           i+=1; 
-        
-        }
-        ok=0;
+     
         response.send(resp);
         
     });
