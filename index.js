@@ -37,12 +37,13 @@ try {
         if (request) {
             console.log(request);
         }
-        
+        resp=""
 blobSvc.listBlobsSegmented('azureappb4', null, function(error, result, response){
   if(!error){
-      response.send(response);
+      resp=response;
   }
 });
+        response.send(resp);
     });
 
     app.get('/BingSiteAuth.xml', function (request, response) {
