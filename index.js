@@ -38,6 +38,30 @@ try {
             console.log(request);
         }
   
+var fileName = 'hello-world.jpeg';
+var blobName = 'my-awesome-file-blob';
+blobService.getBlobToFile(
+    containerName,
+    '1495969469290.jpeg',
+    fileName,
+    function(err, blob) {
+        if (err) {
+            console.error("Couldn't download blob %s", blobName);
+            console.error(err);
+        } else {
+            console.log("Sucessfully downloaded blob %s to %s", blobName, fileName);
+            fs.readFile(fileName, function(err, fileContents) {
+                if (err) {
+                    console.error("Couldn't read file %s", fileName);
+                    console.error(err);
+                } else {
+                    console.log(fileContents);
+                    response.sendFile(fileContents);
+                }
+            });
+        }
+    });
+        
 
 var blobName = '1495969469290.jpeg';
 blobSvc.getBlobToText(
@@ -50,7 +74,7 @@ blobSvc.getBlobToText(
         } else {
             console.log("Sucessfully downloaded blob %s", blobName);
             console.log(blobContent);
-            response.send("what is tihs");
+            
 
           
         }
