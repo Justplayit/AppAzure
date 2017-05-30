@@ -38,9 +38,26 @@ try {
             console.log(request);
         }
 
+        var myStream = getSomeStream();
+
+var blobName = "azureappb4";
+blobService.getBlobToText(
+    "azureappb4",
+    blobName,
+    function(err, blobContent, blob) {
+        if (err) {
+            console.error("Couldn't download blob %s", blobName);
+            console.error(err);
+        } else {
+            console.log("Sucessfully downloaded blob %s", blobName);
+            console.log(blobContent);
+        }
+    });
+
+        
    blobClient.listBlobsSegmented('azureappb4', null, function(error, result, resp){
   if(!error){
-      response.send(resp);
+     console.log(resp);
       // result.entries contains the entries
       // If not all blobs were returned, result.continuationToken has the continuation token.
   }
