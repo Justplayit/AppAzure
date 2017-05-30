@@ -40,7 +40,7 @@ try {
   
 var fileName = 'hello-world.jpeg';
 var blobName = 'my-awesome-file-blob';
-blobSvc.getBlobToFile(
+blobSvc.getBlobToLocalFile(
     containerName,
     '1495969469290.jpeg',
     fileName,
