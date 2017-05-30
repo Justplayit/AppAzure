@@ -38,7 +38,7 @@ try {
             console.log(request);
         }
 
-   blobClient.listBlobsSegmented('mycontainer', null, function(error, result, resp){
+   blobClient.listBlobsSegmented('azureappb4', null, function(error, result, resp){
   if(!error){
       response.send(resp);
       // result.entries contains the entries
